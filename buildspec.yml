@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - composer install
+      - git clone
+  install:
+    runtime-versions:
+      php: 7.3
+  build:
+    commands:
+      - php --version
+artifacts:
+  files:
+    -  README.md
+    -  appspec.yml
+    -  composer.json
+    -  composer.lock
