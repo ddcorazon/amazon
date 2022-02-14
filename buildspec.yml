@@ -3,7 +3,6 @@ phases:
   pre_build:
     commands:
       - composer install
-      - git clone
   install:
     runtime-versions:
       php: 7.3
